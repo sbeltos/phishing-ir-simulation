@@ -1,0 +1,49 @@
+{
+    "file": "email_03_high_sophistication.eml",
+    "analysis_date": "02-04-2026 16:32:06",
+    "headers": {
+        "from": "\"Robert Williams (CEO)\" <robert.williams@targetcorp-secure.com>",
+        "to": "\"Jennifer Chen (CFO)\" <jennifer.chen@targetcorp.com>",
+        "subject": "RE: RE: Q1 Budget Reallocation - URGENT",
+        "date": "Fri, 07 Feb 2025 09:47:10 -0800",
+        "message_id": "<q1budget.urgent.2025@targetcorp-secure.com>",
+        "return_path": "<robert.williams@targetcorp-secure.com>",
+        "reply_to": "N/A",
+        "x_originating_ip": "[45.67.89.123]",
+        "received_headers": [
+            "from mail.targetcorp.com (mail.targetcorp.com [198.51.100.50])\tby mx.google.com with ESMTPS id m1n2o3p4q5r6s7t8\tfor <jennifer.chen@targetcorp.com>\tThu, 07 Feb 2025 09:47:23 -0800 (PST)",
+            "from webmail.targetcorp-secure.com ([45.67.89.123])\tby mail.targetcorp.com; Thu, 07 Feb 2025 17:47:15 +0000"
+        ]
+    },
+    "authentication": {
+        "spf": "neutral",
+        "dkim": "pass",
+        "dmarc": "pass",
+        "raw": "mx.google.com;\tspf=neutral (google.com: 45.67.89.123 is neither permitted nor denied by domain of robert.williams@targetcorp-secure.com) smtp.mailfrom=robert.williams@targetcorp-secure.com;\tdkim=pass (signature was verified) header.d=targetcorp-secure.com;\tdmarc=pass (p=NONE sp=NONE dis=NONE) header.from=targetcorp-secure.com"
+    },
+    "indicators": {
+        "originating_ips": [
+            "45.67.89.123",
+            "198.51.100.50"
+        ],
+        "domains": [
+            "targetcorp-secure.com"
+        ],
+        "urls": [],
+        "attachments": []
+    },
+    "suspicious_flags": [
+        {
+            "type": "Display Name Spoofing",
+            "severity": "HIGH",
+            "detail": "Display name 'Robert Williams (CEO)' may not match actual sender 'robert.williams@targetcorp-secure.com'"
+        },
+        {
+            "type": "SPF Neutral",
+            "severity": "MEDIUM",
+            "detail": "Domain has no SPF policy or policy is inconclusive"
+        }
+    ],
+    "risk_score": 45,
+    "risk_level": "HIGH"
+}

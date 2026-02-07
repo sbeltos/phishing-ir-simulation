@@ -1,0 +1,64 @@
+Delivered-To: jennifer.chen@targetcorp.com
+Received: from mail.targetcorp.com (mail.targetcorp.com [198.51.100.50])
+	by mx.google.com with ESMTPS id m1n2o3p4q5r6s7t8
+	for <jennifer.chen@targetcorp.com>
+	Thu, 07 Feb 2026 09:47:23 -0800 (PST)
+Received: from webmail.targetcorp-secure.com ([45.67.89.123])
+	by mail.targetcorp.com; Thu, 07 Feb 2026 17:47:15 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=targetcorp-secure.com; s=default;
+	h=from:to:subject:date:message-id:references:in-reply-to;
+	bh=SpoofedDKIMHash9876543210ZYXWVU=;
+	b=SpoofedDKIMSignature9876543210ZYXWVUTSRQPONML=
+Return-Path: <robert.williams@targetcorp-secure.com>
+From: "Robert Williams (CEO)" <robert.williams@targetcorp-secure.com>
+To: "Jennifer Chen (CFO)" <jennifer.chen@targetcorp.com>
+Subject: RE: RE: Q1 Budget Reallocation - URGENT
+Date: Wed, 7 Feb 2026 09:47:10 -0800
+Message-ID: <q1budget.urgent.2025@targetcorp-secure.com>
+References: <original.thread.123@targetcorp.com> <reply.thread.456@targetcorp.com>
+In-Reply-To: <reply.thread.456@targetcorp.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.3774.600.62)
+X-Originating-IP: [45.67.89.123]
+Thread-Topic: Q1 Budget Reallocation - URGENT
+Thread-Index: AQHbVc8KpQzY1mN3jk6LpI0XYhF2vw==
+Authentication-Results: mx.google.com;
+	spf=neutral (google.com: 45.67.89.123 is neither permitted nor denied by domain of robert.williams@targetcorp-secure.com) smtp.mailfrom=robert.williams@targetcorp-secure.com;
+	dkim=pass (signature was verified) header.d=targetcorp-secure.com;
+	dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=targetcorp-secure.com
+
+Jennifer,
+
+Following up on our board meeting discussion yesterday regarding the Q1 strategic initiatives. I need you to authorize an immediate wire transfer for the acquisition due diligence work we discussed.
+
+The legal team at Morrison & Associates requires their retainer payment before they can begin the confidentiality agreements for Project Atlas (the pending acquisition we discussed in executive session). Time-sensitive as the seller has another interested party.
+
+Wire Transfer Details:
+Amount: $487,500.00 USD
+Beneficiary: Morrison & Associates Legal Trust Account
+Bank: First National Business Bank
+Account: 8829-4471-2156
+Routing: 021000021
+Swift: FNBBUS33
+Reference: Project Atlas - Due Diligence Retainer
+
+Please process this today before 3PM EST to meet their deadline. I'm in back-to-back meetings with the PE firm until 5PM and unreachable by phone.
+
+Once initiated, forward me the wire confirmation reference number and I'll notify the legal team to begin their work immediately.
+
+This is confidential - please handle personally and do not discuss with anyone until the public announcement.
+
+Thanks,
+Robert
+
+---
+Robert Williams
+Chief Executive Officer
+TargetCorp Inc.
+Direct: +1 (555) 0199-8800
+Mobile: +1 (555) 0199-8801
+robert.williams@targetcorp.com
+
+CONFIDENTIAL: This email contains privileged information. If received in error, please delete immediately.

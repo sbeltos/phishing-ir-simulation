@@ -1,0 +1,64 @@
+Delivered-To: finance@targetcorp.com
+Received: from mail.suspicious-relay.net (suspicious-relay.net [185.220.101.45])
+	by mx.google.com with ESMTPS id a1b2c3d4e5f6g7h8
+	for <finance@targetcorp.com>
+	Fri, 05 Feb 2026 08:23:17 -0800 (PST)
+Received: from unknown (HELO phishing-server.net) ([192.168.1.100])
+	by suspicious-relay.net with ESMTP; 05 Feb 2026 16:23:10 +0000
+DKIM-Signature: none
+X-Google-SMTP-Source: AGHT+IFakeHeaderValue123456789
+X-Received: by 2002:a05:6402:1234:b0:567:89ab:cdef with SMTP id fake123
+Return-Path: <noreply@payro11-verify.com>
+From: "Payroll Services" <noreply@payro11-verify.com>
+Reply-To: support@payro11-verify.com
+To: finance@targetcorp.com
+Subject: Urgent: Verify Your Account Within 24 Hours
+Date: Mon, 5 Feb 2026 08:23:10 -0800
+Message-ID: <20250205162310.12345@payro11-verify.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Mailer: PHPMailer 6.5.0
+X-Originating-IP: [185.220.101.45]
+Authentication-Results: mx.google.com;
+	spf=fail (google.com: domain of noreply@payro11-verify.com does not designate 185.220.101.45 as permitted sender) smtp.mailfrom=noreply@payro11-verify.com;
+	dkim=none
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial, sans-serif; }
+.container { max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; }
+.button { background-color: #0066cc; color: white; padding: 10px 20px; text-decoration: none; display: inline-block; margin: 20px 0; }
+.footer { font-size: 12px; color: #666; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Account Verification Required</h2>
+
+<p>Dear Valued Customer,</p>
+
+<p>We have detected unusual activity on your payroll account. For security reason, your account has been temporary suspended.</p>
+
+<p><strong>You must verify your account within 24 hours to avoid permanent deactivation.</strong></p>
+
+<p>To verify your account and restore access, please click the button below:</p>
+
+<a href="http://bit.ly/3xY7Kq2" class="button">VERIFY ACCOUNT NOW</a>
+
+<p>If you do not verify within 24 hours, your account will be permanently closed and you will loose access to all payroll information.</p>
+
+<p>Thank you for your immediate attention to this matter.</p>
+
+<p>Best Regards,<br>
+Payroll Security Team<br>
+Payroll Services Department</p>
+
+<div class="footer">
+<p>This is an automated message. Please do not reply to this email.</p>
+<p>If you did not request this verification, please contact our support team immediately at support@payro11-verify.com</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+[
+    {
+        "type": "domain",
+        "value": "targetcorp-secure.com",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT",
+        "categories": []
+    },
+    {
+        "type": "domain",
+        "value": "legitimate-vendor.com",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT",
+        "categories": []
+    },
+    {
+        "type": "domain",
+        "value": "payro11-verify.com",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT",
+        "categories": []
+    },
+    {
+        "type": "ip",
+        "value": "45.67.89.123",
+        "vt_available": true,
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 59,
+        "reputation": "LIKELY SAFE",
+        "country": "BG",
+        "asn": 39184
+    },
+    {
+        "type": "ip",
+        "value": "198.51.100.50",
+        "vt_available": true,
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 59,
+        "reputation": "LIKELY SAFE",
+        "country": "Unknown",
+        "asn": "Unknown"
+    },
+    {
+        "type": "ip",
+        "value": "203.45.67.89",
+        "vt_available": true,
+        "malicious": 1,
+        "suspicious": 0,
+        "harmless": 59,
+        "reputation": "MALICIOUS",
+        "country": "AU",
+        "asn": 1221
+    },
+    {
+        "type": "ip",
+        "value": "185.220.101.45",
+        "vt_available": true,
+        "malicious": 14,
+        "suspicious": 2,
+        "harmless": 49,
+        "reputation": "MALICIOUS",
+        "country": "DE",
+        "asn": 60729
+    },
+    {
+        "type": "url",
+        "value": "https://legitimate-vendor-secure.com/invoices/download?id=INV-2025-4782&tokenb2c3d4e5f6",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT"
+    },
+    {
+        "type": "url",
+        "value": "www.legitimate-vendor.com",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT"
+    },
+    {
+        "type": "url",
+        "value": "http://bit.ly/3xY7Kq2",
+        "vt_available": false,
+        "malicious": "Unknown",
+        "suspicious": "Unknown",
+        "harmless": "Unknown",
+        "reputation": "Not found in VT"
+    }
+]

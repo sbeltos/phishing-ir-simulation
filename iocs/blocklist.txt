@@ -1,0 +1,20 @@
+# Phishing Campaign IOC Blocklist
+# Generated: 02-06-2026 17:01:38
+# Source: Phishing IR Simulation - Imam Uddin Mohammed
+# Campaign: Multi-vector phishing (credential theft, BEC, invoice fraud)
+#
+# VirusTotal Enrichment Summary:
+#   Total IOCs analyzed: 10
+#   Confirmed malicious: 2
+#
+# MALICIOUS IOCs (High Confidence - BLOCK IMMEDIATELY)
+#
+
+# Malicious IP Addresses
+203.45.67.89
+185.220.101.45
+
+#
+# SUSPICIOUS IOCs (Medium Confidence - Monitor/Alert)
+#
+

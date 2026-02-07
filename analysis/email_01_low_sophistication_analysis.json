@@ -1,0 +1,68 @@
+{
+    "file": "email_01_low_sophistication.eml",
+    "analysis_date": "02-04-2026 16:32:06",
+    "headers": {
+        "from": "Payroll Services <noreply@payro11-verify.com>",
+        "to": "finance@targetcorp.com",
+        "subject": "Urgent: Verify Your Account Within 24 Hours",
+        "date": "Wed, 05 Feb 2025 08:23:10 -0800",
+        "message_id": "<20250205162310.12345@payro11-verify.com>",
+        "return_path": "<noreply@payro11-verify.com>",
+        "reply_to": "support@payro11-verify.com",
+        "x_originating_ip": "[185.220.101.45]",
+        "received_headers": [
+            "from mail.suspicious-relay.net (suspicious-relay.net [185.220.101.45])\tby mx.google.com with ESMTPS id a1b2c3d4e5f6g7h8\tfor <finance@targetcorp.com>\tFri, 05 Feb 2025 08:23:17 -0800 (PST)",
+            "from unknown (HELO phishing-server.net) ([192.168.1.100])\tby suspicious-relay.net with ESMTP; 05 Feb 2025 16:23:10 +0000"
+        ]
+    },
+    "authentication": {
+        "spf": "fail",
+        "dkim": "none",
+        "dmarc": "unknown",
+        "raw": "mx.google.com;\tspf=fail (google.com: domain of noreply@payro11-verify.com does not designate 185.220.101.45 as permitted sender) smtp.mailfrom=noreply@payro11-verify.com;\tdkim=none"
+    },
+    "indicators": {
+        "originating_ips": [
+            "185.220.101.45"
+        ],
+        "domains": [
+            "payro11-verify.com"
+        ],
+        "urls": [
+            {
+                "original": "http://bit.ly/3xY7Kq2",
+                "defanged": "hxxp://bit[.]ly/3xY7Kq2"
+            }
+        ],
+        "attachments": []
+    },
+    "suspicious_flags": [
+        {
+            "type": "Display Name Spoofing",
+            "severity": "HIGH",
+            "detail": "Display name 'Payroll Services' may not match actual sender 'noreply@payro11-verify.com'"
+        },
+        {
+            "type": "SPF Failure",
+            "severity": "HIGH",
+            "detail": "Sending server not authorized by domain owner"
+        },
+        {
+            "type": "DKIM Failure/Missing",
+            "severity": "MEDIUM",
+            "detail": "Email signature missing or invalid"
+        },
+        {
+            "type": "Potential Typosquatting",
+            "severity": "HIGH",
+            "detail": "Domain 'payro11-verify.com' may be typosquatting"
+        },
+        {
+            "type": "URL Shortener",
+            "severity": "MEDIUM",
+            "detail": "Shortened URL detected: hxxp://bit[.]ly/3xY7Kq2"
+        }
+    ],
+    "risk_score": 145,
+    "risk_level": "CRITICAL"
+}
